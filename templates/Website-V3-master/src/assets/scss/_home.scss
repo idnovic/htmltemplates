@@ -1,0 +1,46 @@
+/* Home section */
+
+@import 'utils';
+
+/* Section background */
+.banner {
+  background-color: #F0F0F0;
+}
+
+/* Page title */
+.large-title {
+  font-size: 80px;
+  font-weight: bold;
+  color: #363636;
+  padding-bottom: 20px;
+  @extend %large-title;
+}
+
+/* Subtitle (Typing) */
+.subtitle-typing {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  background-color: #333333;
+  border-radius: 20px;
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+  @extend %monospace-command;
+}
+
+/* Add Bash identifiers before typing text */
+.subtitle-typing:before {
+  content: "admin@lw:~$ ";
+  color: #C0C0C0;
+  @extend %monospace-prefix;
+}
+
+.subtitle-lowwidth {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 23px;
+  text-align: center;
+  padding-bottom: 10px;
+}

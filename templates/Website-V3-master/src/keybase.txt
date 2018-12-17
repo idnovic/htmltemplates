@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/lwtechgaming
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://linuswillner.me
+  * I am lwtechgaming (https://keybase.io/lwtechgaming) on keybase.
+  * I have a public key with fingerprint 9B6F A15C 4D62 9E98 0586  E5A2 C4D8 7675 DD81 65CD
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012095b749cde2c2b7447cf51d18042fd85a963c263f538b240c4c83e5f37bcdffd70a",
+      "fingerprint": "9b6fa15c4d629e980586e5a2c4d87675dd8165cd",
+      "host": "keybase.io",
+      "key_id": "c4d87675dd8165cd",
+      "kid": "0101e122abf58518a2ba38f8234f7e312e194d8310a382b780752251635e7c9f8cb20a",
+      "uid": "59febbb4fa125a46ad2a3e6b08ce5619",
+      "username": "lwtechgaming"
+    },
+    "service": {
+      "hostname": "linuswillner.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1525898140,
+  "expire_in": 157680000,
+  "prev": "f700e66df04a90c48949a14785da43dc5c7834149f229aaca0898576d3c23ff8",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMN5AnicbZJ7UFVFHMcv8uw2TIDFiNagh5wSeZz32YOMCJUMmDg5GIxAtz3n7IEj
+cO/lPngM0ARIQ44DjQQq2UAggwkiI8nUBCpExUMQ8UGEjUqmA0VacQ3IR3uZ+K/9
+Z3d/v+/vs9/f7vZ7u+r0Lv0/5Np/KkEjLsO99Xbd3r9SjhUSkkkpICIKiUy0PKEs
+BVlthkxNISIIkqJJkZMEVpQVRMs0XrGCrHKUQgGSpVUFcFDkGZnmGZVjgESzpMzK
+gEGcygiSrKiqIpCQCCFUzZiOLGaLZrRhrCjxKqQ4mVV4WkQiIDnAIw7SOAAEXuAU
+BVA8Jyu4MMNkdVZgcxK0ojDNhGN4Y1i29z/6Fd8khSiahpLKAY4CkJYgA1RAM6wq
+IIaiESXiWoYicRh3BUiBo2mO4hkOCbKoAlmil33bl3GcqCJJklhsmuYgy0OFhgzi
+JRLIiOMp0Sm0IosRZiOszsqzITkjHWbjnoniEAJncjUZOS/X2c2KSjParXlaVpYR
+WcJwJIQwW0w2k2zKwskMm81sjXAW2wrMTnUekgz/cQySZlSc6BAiF1msmslIRFBY
+Kds0J5jiaA6IgGLJEALlmzULMmhOBSfwgMTDeQ7KxUhVIEnE84pKslDEzwZEVoQU
+KwBOgSyjyJwsAIalWFGlaRFCGZIYiykKfm5GVQHh7CzHaMJsgH3CdMy0aulGaLNb
+EFHc15vqpnPR6zzcVzn/mU7/jM/K74Opzz2NG1x4wc9n4/7hyAJuIP9YuW7o0Gt1
+VeX2j5/sgVEPRz1rXF5NcLQn+s37J+oejt+rmFwMCE7bffC7qBOZzOOFgjTY/P26
+rMnzMXuPkzmpe4ZbX/R33bmm0be+/aPstpbGvpfI2snZtpmd//QHXZ1dDN+sP5Jd
+/eF80cC7nZ7bZ0+eNQTapwOiD5UuHU5Kmkifrjr5R9OPRRu/RRP6kNpLDqmp0/rO
+hbLIXdum1+eZkl7et2GtZ16odP/RaM2AVH7z7fzbB0579F4ULqUnpXTP1/mSkXdq
+0xyvx/beGoq/XKnQQY/bu581Nox8ERvn/bR2sTEs2KejlZSWdpTs2AZmJq4E3M9J
+cZwZ6Smq9v453i8obqTim7xr8NQV/mh4e7IvmeOW9HfDaZNR9Hrr3qYzprFzNz5T
+zO7hBweTN2x2fNC05Zd6h3noyFxy3Wr9zFz910NEWeGc13rXkgPDm6492B091dzg
+7e7S1frArbLmzdDfbncYtoDr3U1br5e2lP36acqp3umEwQS4tef82tDKPi3qeN2q
+oZiK3/3DLlaTY6mjSN/d+XzgV4cLmKKxJ0PBXfGP1k3GMJFelZ+n3ugZT3k/9b0T
+nn+27eqbiu7od19z7uYrZxc+KW0e75mbCtx/986Xjiql51ZiU3ZseNdowb7s7Z49
+RXSLvHT5jc67YmgiI5St9vAuPkpevfAvv+bNEw==
+=GK8t
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lwtechgaming
+
+==================================================================

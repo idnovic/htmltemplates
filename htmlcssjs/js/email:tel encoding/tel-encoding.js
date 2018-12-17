@@ -1,0 +1,1 @@
+var prefix="+491520",number="9267353",tele=prefix+number;document.write("<a href=tel:"+prefix+number">"+tele+"</a>");

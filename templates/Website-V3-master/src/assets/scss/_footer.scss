@@ -1,0 +1,31 @@
+/* Footer section */
+
+@import 'utils';
+
+/* Section background */
+.page-footer {
+  background-color: #23272A;
+  color: #FFFFFF;
+  padding-bottom: 48px; /* Remove extra padding at the bottom */
+}
+
+/* Footer text */
+.footer-text {
+  text-align: center;
+
+  p:not(:last-child) {
+    padding-bottom: 10px;
+  }
+
+  .react-link {
+    color: #61DAFB;
+  }
+
+  .sass-link {
+    color: #EA84B7;
+  }
+  
+  .bulma-link {
+    color: #00d1b2;
+  }
+}

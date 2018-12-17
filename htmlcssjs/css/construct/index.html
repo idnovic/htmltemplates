@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>Construct.css - Focus on the content and structure of your HTML</title>
+<!-- FONTS. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin" />
+<!-- STYLES. -->
+<link rel="stylesheet" href="./css/sanitize.css" />
+<link rel="stylesheet" href="./css/construct.css" />
+</head>
+<body>
+
+<header role="banner">
+
+  <h1>
+    Construct.css
+  </h1>
+
+  <hr />
+
+</header>
+
+<main role="main">
+
+  <article>
+
+    <blockquote>
+      <p>
+        "<b>Construct.css</b> - Focus on the content and structure of your HTML"
+      </p>
+    </blockquote>
+
+    <p>
+      To see how your site looks with Construct.css applied, snag this bookmarklet…
+    </p>
+
+    <p>
+      <b>
+        <a href="javascript:(function(d){var%20f=Array.prototype.forEach;var%20linkTags=d.querySelectorAll('[rel=\'stylesheet\']');var%20styleTags=d.querySelectorAll('style');f.call(linkTags,function(x){x.rel=''});f.call(styleTags,function(x){x.innerHTML=''});var%20newLink=d.createElement('link');newLink.rel='stylesheet';newLink.href='https://t7.github.io/construct.css/css/bookmarklet.css';d.head.appendChild(newLink)})(document);">
+          Deconstruct!
+        </a>
+      </b>
+    </p>
+
+    <hr />
+
+    <p>
+      This is just a silly idea, a CSS "library" that styles tags directly — as opposed to using <code>class</code> names as style hooks — to help people become more familiar with how to use semantic HTML.
+    </p>
+
+    <p>
+      It builds incrementally from a common base, then also includes "boxes" and "theme" CSS files. These allow a user to visually see what would otherwise be invisible semantic tags, and adds a hand drawn effect to prevent observers from paying too much attention to the aesthetics of a document.
+    </p>
+
+    <p>
+      Below are links to the same underlying HTML structure, but with different CSS files applied.
+    </p>
+
+    <ul>
+      <li>
+        <a href="./example.html">
+          Example page: <code>construct.css</code>
+        </a>
+      </li>
+      <li>
+        <a href="./example-boxes.html">
+          Example page: <code>construct.boxes.css</code>
+        </a>
+      </li>
+      <li>
+        <a href="./example-theme.html">
+          Example page: <code>construct.theme.css</code>
+        </a>
+      </li>
+      <li>
+        <a href="./example-boxes-and-theme.html">
+          Example page: <code>construct.boxes.css</code> + <code>construct.theme.css</code>
+        </a>
+      </li>
+      <li>
+        <a href="./example-no-css.html">
+          Example page: no CSS
+        </a>
+      </li>
+    </ul>
+
+    <p>
+      It also includes an additional <code>construct.debug.css</code> file, that can be used to flag invalid or incomplete HTML…
+    </p>
+
+    <ul>
+      <li>
+        <a href="./example-invalid.html">Example page: invalid HTML</a>
+      </li>
+
+      <li>
+        <a href="./example-invalid-with-debug.html">Example page: invalid HTML + <code>construct.debug.css</code></a>
+      </li>
+    </ul>
+
+    <p>
+      View the project's repository here…
+    </p>
+
+    <ul>
+      <li>
+        <a href="https://github.com/t7/construct.css">https://github.com/t7/construct.css</a>
+      </li>
+    </ul>
+
+  </article>
+
+</main>
+
+<footer role="contentinfo">
+
+  <hr />
+
+  <p>
+    NOTE: Construct uses <a href="https://csstools.github.io/sanitize.css/">Sanitize</a> as a CSS "reset."
+  </p>
+
+</footer>
+
+</body>
+</html>

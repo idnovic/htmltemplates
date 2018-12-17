@@ -1,0 +1,458 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title></title>
+<!-- FONTS. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin" />
+<!-- STYLES. -->
+<link rel="stylesheet" href="./css/sanitize.css" />
+<link rel="stylesheet" href="./css/construct.css" />
+<link rel="stylesheet" href="./css/construct.boxes.css" />
+<link rel="stylesheet" href="./css/construct.debug.css" />
+
+<!-- One `style` tag is okay. -->
+<style></style>
+
+<!-- More `style` tags get flagged. -->
+<style></style>
+
+<!-- Add `async` to external `script`. -->
+<script src=""></script>
+
+<!-- Add `async` to external `script`. -->
+<script src="./does/not/exist"></script>
+
+<!-- Insecure external `script`. -->
+<script src="http://example.com/does/not/exist" async="async"></script>
+
+<!-- Insecure external `link`. -->
+<link href="http://example.com/does/not/exist" />
+
+</head>
+<body style="font-family: inherit">
+
+<!-- Inline `script` tag. -->
+<script></script>
+
+<!-- `link` not allowed within `body`. -->
+<link />
+
+<!-- `link` not allowed within `body`. -->
+<link href="./does/not/exist" />
+
+<!-- `style` not allowed within `body`. -->
+<style></style>
+
+<h1 style="font-family: inherit">
+  Invalid HTML Examples
+</h1>
+
+<hr />
+
+<p>
+  Missing <code>title</code> attribute in <code>abbr</code>.
+</p>
+
+<blockquote>
+  <p>
+    The <abbr>USA</abbr> is a country in North America.
+  </p>
+</blockquote>
+
+<hr />
+
+<div style="display: none">
+  <p>
+    Hidden content, with <code>style="display: none"</code>.
+  </p>
+</div>
+
+<hr />
+
+<p>
+  The <code>figcaption</code> not first/last child of <code>figure</code>.
+</p>
+
+<figure>
+  <img
+    alt="Example image"
+    src="https://picsum.photos/900/100"
+  />
+  <figcaption>
+    Image description
+  </figcaption>
+  <p>
+    (This paragraph is <code>:last-child</code>.)
+  </p>
+</figure>
+
+<hr />
+
+<p>
+  More than one <code>figcaption</code> per <code>figure</code>. Image with missing <code>src</code>.
+</p>
+
+<figure>
+  <figcaption>
+    Image description
+  </figcaption>
+  <img
+    alt="(Image source omitted)"
+    height="100"
+  />
+  <figcaption>
+    Image description
+  </figcaption>
+</figure>
+
+<hr />
+
+<p>
+  Caption is not a child of figure.
+</p>
+
+<figcaption>
+  This <code>figcaption</code> lacks a <code>figure</code> parent.
+</figcaption>
+
+<hr />
+
+<p>
+  External link to non-HTTPS site.
+<p>
+
+<p>
+  <a href="http://example.com/">
+    Example link
+  </a>
+</p>
+
+<hr />
+
+<p>
+  Link with <code>target="_blank"</code> that lacks <code>rel="noopener noreferrer"</code>.
+</p>
+
+<p>
+  <a href="https://example.com/" target="_blank">
+    Example link
+  </a>
+</p>
+
+<hr />
+
+<p>
+  Invalid child of <code>ol</code>.
+</p>
+
+<ol>
+  <li>
+    <p>
+      Valid item within list.
+    </p>
+  </li>
+  <p>
+    Invalid item within list.
+  </p>
+</ol>
+
+<hr />
+
+<p>
+  Invalid child of <code>ul</code>.
+</p>
+
+<ul>
+  <li>
+    <p>
+      Valid item within list.
+    </p>
+  </li>
+  <p>
+    Invalid item within list.
+  </p>
+</ul>
+
+<hr />
+
+<li>
+  <code>li</code> without parent <code>ol</code> or <code>ul</code>.
+</li>
+
+<br />
+
+<hr />
+
+<dl>
+  <dd>
+    <code>dd</code> - Definition list: Definition
+  </dd>
+  <dt>
+    <code>dt</code> - Definition list: Term
+  </dt>
+  <dd>
+    <code>dd</code> - Definition list: Definition
+  </dd>
+  <p>
+    Invalid item within list.
+  </p>
+</dl>
+
+<dl>
+  <div>
+    <dd>
+      <code>dd</code> - Definition list: Definition
+    </dd>
+    <dt>
+      <code>dt</code> - Definition list: Term
+    </dt>
+    <dd>
+      <code>dd</code> - Definition list: Definition
+    </dd>
+    <p>
+      Invalid item within list.
+    </p>
+  </div>
+</dl>
+
+<div>
+  <dt>
+    <code>dt</code> without correct parent.
+  </dt>
+  <dd>
+    <code>dd</code> without correct parent.
+  </dd>
+</div>
+
+<dt>
+  <code>dt</code> without correct parent.
+</dt>
+
+<dd>
+  <code>dd</code> without correct parent.
+</dd>
+
+<hr />
+
+<form onsubmit="return false">
+
+  <fieldset>
+
+    <legend>
+      Radios without <code>name="…"</code>
+    </legend>
+
+    <p>
+      <label for="RADIO_ID_1">
+        <input
+          type="radio"
+          id="RADIO_ID_1"
+        />
+        Label for radio 1
+      </label>
+    </p>
+
+    <p>
+      <label for="RADIO_ID_2">
+        <input
+          type="radio"
+          id="RADIO_ID_2"
+        />
+        Label for radio 2
+      </label>
+    </p>
+
+  </fieldset>
+
+  <fieldset>
+
+    <legend>
+      Checkboxes with/without nesting
+    </legend>
+
+    <p>
+      <label for="CHECKBOX_ID_1">
+        <input
+          type="checkbox"
+          id="CHECKBOX_ID_1"
+        />
+        Label for checkbox 1
+      </label>
+    </p>
+
+    <p>
+      <input
+        type="checkbox"
+        id="CHECKBOX_ID_2"
+      />
+      <label for="CHECKBOX_ID_2">
+        Label for checkbox 2 (not nested)
+      </label>
+    </p>
+
+  </fieldset>
+
+  <fieldset>
+
+    <p>
+      This paragraph is <code>:first-child</code>.
+    </p>
+
+    <legend>
+      This legend is not <code>:first-child</code>.
+    </legend>
+
+    <p>
+      <label>
+        This <code>label</code> lacks <code>for="…"</code>
+      </label>
+      <input
+        id="INPUT_TEXT_ID_1"
+        type="text"
+      />
+    </p>
+
+    <p>
+      <label for="INPUT_TEXT_ID_2">
+        This <code>input</code> lacks <code>id="…"</code>
+      </label>
+      <input
+        type="text"
+      />
+    </p>
+
+  </fieldset>
+
+  <p>
+    <button>
+      Button without <code>type="…"</code>
+    </button>
+  </p>
+
+</form>
+
+<hr />
+
+<table role="presentation">
+  <tr>
+    <td>
+      Table with <code>role="presentation"</code>
+    </td>
+  </tr>
+</table>
+
+<hr />
+
+<table>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>
+            Table nested inside another <code>table</code>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<hr />
+
+<p>
+  Table with invalid <code>col</code> values.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        &nbsp;
+      </th>
+      <th scope="INVALID">
+        Uno
+      </th>
+      <th scope="col">
+        Dos
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">
+        Foo:
+      </th>
+      <td>
+        Value 1
+      </td>
+      <td>
+        Value 2
+      </td>
+    </tr>
+    <tr>
+      <th scope="INVALID">
+        Foo:
+      </th>
+      <td>
+        Value 1
+      </td>
+      <td>
+        Value 2
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p>
+  Empty <code>div</code>.
+<p>
+
+<div></div>
+
+<hr />
+
+<span>
+  <div>
+    Improperly nested <code>div</code>, inside <code>span</code>.
+  </div>
+</span>
+
+<hr />
+
+<p>
+  <div>
+    Improperly nested <code>div</code>, inside <code>p</code>.
+  </div>
+</p>
+
+<hr />
+
+<div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <p>
+                    Needless nesting of <code>div</code> tags.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

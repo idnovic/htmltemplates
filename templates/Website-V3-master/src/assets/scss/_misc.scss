@@ -1,0 +1,61 @@
+/* Miscellaneous */
+
+@import 'utils';
+
+/* Divider */
+.divider {
+  background-color: #FCFCFC;
+  height: .2rem;
+  margin: 0; /* Remove margin for background color support */
+}
+
+/* Blurred background on low width menu open */
+.blurred {
+  position: relative;
+}
+
+.blurred:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
+}
+
+/* Center fix for grouped buttons */
+.center-fix {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Titles, subtitles and other typography */
+.section-title {
+  font-weight: 300;
+  font-size: 34px;
+  text-align: center;
+  padding-bottom: 10px;
+  @extend %title;
+}
+
+.section-subtitle {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.section-text-title {
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  @extend %title;
+}
+
+.section-text {
+  font-size: 15px;
+  font-weight: 300;
+  @extend %text;
+}

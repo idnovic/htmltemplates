@@ -1,0 +1,62 @@
+/* Main Sass file */
+
+/* Global modules */
+
+@import '~bulma/bulma.sass'; /* Bulma */
+@import '~bulma-divider/dist/css/bulma-divider.sass'; /* Bulma divider */
+@import '~react-typist/dist/Typist.css'; /* react-typist cursor blink */
+@import '~react-sweet-progress/lib/style.css'; /* react-sweet-progress */
+@import '~flag-icon-css/css/flag-icon.css'; /* Flag icons */
+@import '../css/animations.css'; /* Animations */
+@import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css'); /* Font-Awesome */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono:100|Fira+Mono|Merriweather:300,400|Roboto:100,300,400|Bilbo+Swash+Caps'); /* Google Fonts */
+
+/* Local modules */
+
+@import 'misc';
+@import 'utils';
+@import 'floating';
+@import 'home';
+@import 'about';
+@import 'skills';
+@import 'projects';
+@import 'contact';
+@import 'footer';
+
+/* Typography */
+
+%large-title {
+  font-family: 'Oswald', sans-serif;
+}
+
+%title {
+  font-family: 'Roboto', sans-serif;
+}
+
+%text {
+  font-family: 'Merriweather', serif;
+}
+
+%monospace-prefix {
+  font-family: 'Roboto Mono', monospace;
+}
+
+%monospace-command {
+  font-family: 'Fira Mono', monospace;
+}
+
+%handwriting {
+  font-family: 'Bilbo Swash Caps', cursive;
+}
+
+/* Animations */
+
+%item-hover-animation {
+  @include transition (all 125ms);
+  transition-timing-function: ease-in-out;
+}
+
+%navbar-toggle-animation {
+  @include transition (all 300ms);
+  transition-timing-function: ease-in-out;
+}

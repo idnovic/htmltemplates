@@ -1,0 +1,36 @@
+/* About section */
+
+@import 'utils';
+
+/* Section background */
+.about {
+  background-color: #FCFCFC;
+}
+
+/* Section text */
+.about-text {
+  padding-right: 70px;
+}
+
+/* Paragraph padding */
+.about-text-column {
+  p {
+    padding-bottom: 10px;
+  }
+}
+
+/* Image */
+.about-text-image {
+  width: 100%;
+  height: auto;
+  float: right;
+  padding: 10px;
+  border: 1px solid gray;
+  box-shadow: $shadow-3;
+}
+
+/* Signature */
+.signature {
+  font-size: 55px;
+  @extend %handwriting;
+}

@@ -1,0 +1,1 @@
+var user="ivo",host="damjanovic.it",link=user+"@"+host;document.write("<a href=mailto:"+user+"@"+host+">"+link+"</a>");

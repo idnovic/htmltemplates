@@ -1,0 +1,40 @@
+/* Contact section */
+
+@import 'utils';
+
+/* Section background */
+.contact {
+  background-color: #FCFCFC;
+}
+
+/* Text padding */
+.contact-text {
+  p {
+    padding-bottom: 20px;
+  }
+}
+
+/* Contact info pre-text */
+.contact-pre {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 70%;
+  padding-bottom: 20px;
+}
+
+/* Contact method container */
+.contact-methods {
+  text-align: center;
+}
+
+/* Contact method text */
+.contact-method {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+/* Social icon spacing */
+.social:not(:last-child) {
+  margin-right: 10px;
+}

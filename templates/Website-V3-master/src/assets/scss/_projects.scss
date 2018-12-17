@@ -1,0 +1,33 @@
+/* Projects section */
+
+@import 'utils';
+
+/* Section background */
+.projects {
+  background-color: #FCFCFC;
+}
+
+/* Project card */
+.card {
+  box-shadow: $shadow-2;
+  text-align: center;
+  padding-right: 24px; /* Fix extra padding */
+}
+
+/* Card title */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Card text */
+.card-text {
+  padding-bottom: 10px;
+}
+
+/* Hack to override the Bulma margin (Which uses !important) */
+.tile {
+  .is-child {
+    margin: 15px !important;
+  }
+}

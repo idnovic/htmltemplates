@@ -1,0 +1,25 @@
+<div id="cookies-eu-banner" style="display: none;">
+Sind Sie mit der Nutzung von Cookies und Analytics für Seitenaufrufstatistiken einverstanden?
+<a href="info/datenschutz.html" id="cookies-eu-more">Information</a>
+<button id="cookies-eu-reject">NEIN</button>
+<button id="cookies-eu-accept">OK</button>
+</div>
+
+<script async src="main/js/cookies-eu-banner.js"></script>
+<script>
+new CookiesEuBanner(function(){
+(function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
+;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
+;c.parentNode.insertBefore(a,c)
+})(window,document,"galite","script","main/js/ga-lite.min.js");
+galite('create', 'UA-100830667-4', 'auto');
+galite('send', 'pageview');
+var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;
+galite('send', 'timing', 'pageload', 'load', loadTime);
+window.addEventListener('unload',function () { galite('send', 'timing', 'JS Dependencies', 'unload') });
+(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter51538940 = new Ya.Metrika({ id:51538940, clickmap:true, trackLinks:true, accurateTrackBounce:true })
+; } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }
+; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.min.js"
+; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+}, true);
+</script>

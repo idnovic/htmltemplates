@@ -1,0 +1,95 @@
+<script src="yall.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", yall);</script>
+
+<!-- An src-only <img> element example -->
+<img class="lazy" src="placeholder.jpg" data-src="image-to-lazy-load.jpg" alt="Alternative text to describe image.">
+
+<!-- A somewhat more complex src + srcset example -->
+<img class="lazy" src="placeholder.jpg" data-srcset="image-to-lazy-load-2x.jpg 2x, image-to-lazy-load-1x.jpg 1x" data-src="image-to-lazy-load-1x.jpg" alt="Alternative text to describe image.">
+
+<!-- A more complex <picture> + <img> + src/srcset example -->
+<picture>
+  <source data-srcset="image-to-lazy-load-2x.webp 2x, image-to-lazy-load-1x.webp 1x" type="image/webp">
+  <img class="lazy" src="placeholder.jpg" data-srcset="image-to-lazy-load-2x.jpg 2x, image-to-lazy-load-1x.jpg 1x" data-src="image-to-lazy-load-1x.jpg" alt="Alternative text to describe image.">
+</picture>
+
+
+<video class="lazy" autoplay loop muted playsinline>
+  <source data-src="video.webm" type="video/webm">
+  <source data-src="video.mp4" type="video/mp4">
+</video>
+
+
+<video class="lazy" data-poster="placeholder.jpg" controls preload="none">
+  <source src="video.webm" type="video/webm">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+
+<iframe class="lazy" data-src="some-other-document.html"></iframe>
+
+<!-- I bet this loads a giant stock photo... -->
+<div class="masthead lazy-bg"></div>
+
+/* Note the lack of a `background` in this style. */
+.masthead {
+  background: #e6e6e6; /* A little placeholder color */
+  height: 16.66vw;
+  margin: 0 0 1rem;
+}
+
+/* BAM! Lazy loaded! */
+.masthead.lazy-bg-loaded {
+  background: url("masthead.jpg");
+}
+
+#######
+
+NO JS
+
+####
+<html class="no-js">
+
+<!-- Remove the no-js class on the <html> element if JavaScript is on -->
+<script>document.documentElement.classList.remove("no-js")</script>
+
+/* Hide .lazy elements if JavaScript is off */
+.no-js .lazy {
+  display: none;
+}
+
+<!-- A <noscript> example using <img> with src and srcset. -->
+<img class="lazy" data-srcset="/img/image-to-lazy-load-2x.jpg 2x, /img/image-to-lazy-load-1x.jpg 1x" data-src="/img/image-to-lazy-load-1x.jpg" src="/img/placeholder.jpg" alt="Alternative text to describe image.">
+<noscript>
+  <img srcset="/img/image-to-lazy-load-2x.jpg 2x, /img/image-to-lazy-load-1x.jpg 1x" src="/img/image-to-lazy-load-1x.jpg" alt="Alternative text to describe image.">
+</noscript>
+
+<!-- And a <picture> example. -->
+<picture>
+  <source data-srcset="/img/image-to-lazy-load-2x.webp 2x, /img/image-to-lazy-load-1x.webp 1x" type="image/webp">
+  <img class="lazy" data-srcset="/img/image-to-lazy-load-2x.jpg 2x, /img/image-to-lazy-load-1x.jpg 1x" data-src="/img/image-to-lazy-load-1x.jpg" src="/img/placeholder.jpg" alt="Alternative text to describe image.">
+</picture>
+<noscript>
+  <picture>
+    <source srcset="/img/image-to-lazy-load-2x.webp 2x, /img/image-to-lazy-load-1x.webp 1x" type="image/webp">
+    <img srcset="/img/image-to-lazy-load-2x.jpg 2x, /img/image-to-lazy-load-1x.jpg 1x" src="/img/image-to-lazy-load-1x.jpg" alt="Alternative text to describe image.">
+  </picture>
+</noscript>
+
+<!-- Here's a <video> example, too. -->
+<video class="lazy" autoplay loop muted playsinline>
+  <source data-src="video.webm" type="video/webm">
+  <source data-src="video.mp4" type="video/mp4">
+</video>
+<noscript>
+  <video autoplay loop muted playsinline>
+    <source src="video.webm" type="video/webm">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</noscript>
+
+<!-- Here's an <iframe> example for good measure. -->
+<iframe class="lazy" data-src="lazy.html"></iframe>
+<noscript>
+  <iframe src="lazy.html"></iframe>
+</noscript>

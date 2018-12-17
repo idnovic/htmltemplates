@@ -1,0 +1,162 @@
+/* Floating buttons and components */
+
+@import 'utils';
+
+/* Scroll hint */
+
+/* Place the scroll hint outside the viewport */
+.out-of-viewport {
+  @include transform (translateY(100%) !important);
+}
+
+/* Scroll hint button */
+.scroll-hint {
+  position: fixed;
+  bottom: -12px;
+  left: 50%;
+  height: 65px;
+  width: 50px;
+  z-index: 1;
+  border: 1.7px solid #4A4A4A;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  @include transform (translateX(-50%));
+
+  .hint-content {
+    font-size: 37px;
+    text-align: center;
+  }
+}
+
+.scroll-hint-hidden {
+  display: none;  
+}
+
+.scroll-hint:hover {
+  cursor: pointer;
+}
+
+/* Button slide up animation */
+.show {
+  animation-name: show;
+  animation-duration: 1s;
+
+  @keyframes show {
+    from { transform: translate(-50%, 100%); }
+    to { transform: translate(-50%, 0%); }
+  }
+}
+
+/* Button slide down animation */
+.hide {
+  animation-name: hide;
+  animation-duration: 1s;
+
+  @keyframes hide {
+    from { transform: translate(-50%, 0%); }
+    to { transform: translate(-50%, 100%); }
+  }
+}
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  opacity: 1;
+  z-index: 1;
+  @extend %navbar-toggle-animation;
+
+  li {
+    font-size: 20px;
+    @extend %large-title;
+    @extend %item-hover-animation;
+  }
+
+  li:hover {
+    background-color: #DBDBDB;
+    @extend %item-hover-animation;
+  }
+}
+
+/* Navbar item selected */
+.item-selected {
+  background-color: #DBDBDB;
+}
+
+/* Menu button */
+
+.menu-button {
+  background-color: #EAEAEA;
+  position: fixed;
+  font-size: 20px;
+  top: 3px;
+  right: 3px;
+  z-index: 2;
+  @extend %item-hover-animation;
+}
+
+.menu-button:hover {
+  background-color: #DBDBDB;
+  @extend %item-hover-animation;
+}
+
+/* Lang selector */
+
+.lang-button {
+  position: fixed;
+  top: 3px;
+  left: 5px;
+  z-index: 3;
+  
+  .inner {
+    background-color: #EAEAEA;
+    font-size: 20px;
+    @extend %item-hover-animation;
+  }
+
+  .inner:hover {
+    background-color: #DBDBDB;
+    border-color: #B5B5B5 !important;
+    @extend %item-hover-animation;
+  }
+}
+
+/* Dropdown content */
+.dropdown-inner {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #F0F0F0;
+}
+
+/* Dropdown content container */
+.dropdown-container {
+  min-width: 0;
+  max-width: 45px;
+}
+
+/* Dropdown item */
+.item {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.item:hover {
+  background-color: #DBDBDB;
+  cursor: pointer;
+  @extend %item-hover-animation;
+}
+
+/* Hack to disable focusing on the dropdown button */
+button:focus {
+  outline-style: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* Hack to enable animated toggle for the dropdown */
+.dropdown-menu {
+  display: block !important;
+}
